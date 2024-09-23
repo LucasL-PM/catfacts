@@ -30,7 +30,7 @@ jobs:
         run: postman login --with-api-key ${{ secrets.POSTMAN_API_KEY }}
       - name: Publish API
         run: |
-          postman api publish d8ca5dcb-e407-4348-9f39-3daf3cf00119 \
+          postman api publish 8ae07b61-c063-4670-b455-17e6ab06d161 \
           --name "${{needs.parse-api-version.outputs.api-version}}" \
           --release-notes "#Version: ${{needs.parse-api-version.outputs.api-version}}"\
 
