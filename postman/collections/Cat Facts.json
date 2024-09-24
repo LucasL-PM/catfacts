@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "900987b4-837f-4bb0-8758-8fcd7d57edac",
 		"name": "Cat Facts",
-		"description": "**The Cat Facts API allows you to programmatically access facts about felines over the internet.** \n\nThis API returns cat facts that make pussycat lovers giggle with delight. \nThis API provides random cat facts, interesting trivia about cats, and funny sayings about cats.\nWhether you're looking for fun cat facts to share on your Twitter feed, or you need a quick laugh while scrolling through your feed, this API will provide you with plenty of material.\nIts comprehensive collection of adorable cat-related statistics and blurbs about all things felines is sure to keep you entertained for hours.\nThe cat facts range from interesting and informative to adorable and heartwarming.\nEach cat fact is accompanied by an accompanying image which, for maximum cuteness factor, is usually a picture of a cat, or a cat themed item.\nSo, whether you're looking for something to share on social media, or you just need a smile in your day, this API is sure to provide you with lots of kitty cuteness and fun facts.\n\n# API Reference\n\nContact Support:\n Name: Ronak\n Email: admin@admin.com",
+		"description": "**The Cat Facts API allows you to programmatically access facts about felines over the internet.**\n\nThis API returns cat facts that make pussycat lovers giggle with delight.  \nThis API provides random cat facts, interesting trivia about cats, and funny sayings about cats.  \nWhether you're looking for fun cat facts to share on your Twitter feed, or you need a quick laugh while scrolling through your feed, this API will provide you with plenty of material.  \nIts comprehensive collection of adorable cat-related statistics and blurbs about all things felines is sure to keep you entertained for hours.  \nThe cat facts range from interesting and informative to adorable and heartwarming.  \nEach cat fact is accompanied by an accompanying image which, for maximum cuteness factor, is usually a picture of a cat, or a cat themed item.  \nSo, whether you're looking for something to share on social media, or you just need a smile in your day, this API is sure to provide you with lots of kitty cuteness and fun facts.\n\n# API Reference\n\nContact Support:  \nName: Lucas  \nEmail: [admin@admin.com](https://mailto:admin@admin.com)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_uid": "38338269-900987b4-837f-4bb0-8758-8fcd7d57edac"
 	},
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Returns a list of breeds",
-					"id": "1168eb65-1acf-4dab-ba2e-673ced2f15c0",
+					"id": "c9495272-efb5-4d5a-a8d6-b05ce021cbb0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -25,12 +25,12 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeds?limit=<long>",
+							"raw": "{{baseUrl}}/breeds3?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeds"
+								"breeds3"
 							],
 							"query": [
 								{
@@ -44,7 +44,7 @@
 					},
 					"response": [
 						{
-							"id": "cd7a1c10-f6a2-4331-a8c8-5b53341cf384",
+							"id": "9c36fed5-b1c7-49f3-ba13-cbcb9a7c862f",
 							"name": "Normal operation",
 							"originalRequest": {
 								"method": "GET",
@@ -60,12 +60,12 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/breeds?limit=<long>",
+									"raw": "{{baseUrl}}/breeds3?limit=<long>",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
-										"breeds"
+										"breeds3"
 									],
 									"query": [
 										{
@@ -89,7 +89,7 @@
 							"body": "{}"
 						},
 						{
-							"id": "5221c42f-2ab2-45a2-9a6a-73caa7730ad4",
+							"id": "1fef3805-1145-4021-863f-86701ccefe84",
 							"name": "Server Exception",
 							"originalRequest": {
 								"method": "GET",
@@ -105,12 +105,12 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/breeds?limit=<long>",
+									"raw": "{{baseUrl}}/breeds3?limit=<long>",
 									"host": [
 										"{{baseUrl}}"
 									],
 									"path": [
-										"breeds"
+										"breeds3"
 									],
 									"query": [
 										{
@@ -457,7 +457,8 @@
 		{
 			"id": "31fe054e-f824-4477-84f4-523de77bf6e8",
 			"key": "baseUrl",
-			"value": "https://catfact.ninja"
+			"value": "https://catfact.ninja",
+			"type": "string"
 		}
 	]
 }
