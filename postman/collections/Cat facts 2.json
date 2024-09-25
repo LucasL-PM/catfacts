@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "026ff00e-4fe3-4581-8df2-e5345497b4f8",
+		"_postman_id": "f8de2582-80ae-4ee0-864b-2a3dbb5cf675",
 		"name": "Cat facts 2",
-		"description": "**The Cat Facts API allows you to programmatically access facts about felines over the internet.** \n\nThis API returns cat facts that make pussycat lovers giggle with delight. \nThis API provides random cat facts, interesting trivia about cats, and funny sayings about cats.\nWhether you're looking for fun cat facts to share on your Twitter feed, or you need a quick laugh while scrolling through your feed, this API will provide you with plenty of material.\nIts comprehensive collection of adorable cat-related statistics and blurbs about all things felines is sure to keep you entertained for hours.\nThe cat facts range from interesting and informative to adorable and heartwarming.\nEach cat fact is accompanied by an accompanying image which, for maximum cuteness factor, is usually a picture of a cat, or a cat themed item.\nSo, whether you're looking for something to share on social media, or you just need a smile in your day, this API is sure to provide you with lots of kitty cuteness and fun facts.\n\n# API Reference\n\nContact Support:\n Name: Ronak\n Email: admin@admin.com",
+		"description": "An API description\n\nContact Support:\n Name: Ronak\n Email: admin@admin.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "38338269-026ff00e-4fe3-4581-8df2-e5345497b4f8"
+		"_uid": "38338269-f8de2582-80ae-4ee0-864b-2a3dbb5cf675"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Returns a random fact",
-					"id": "5d6ad93f-7da2-443f-adc6-894fc7fcc0a4",
+					"id": "c14ad14f-d848-4018-90cd-de6b20068a53",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -37,7 +37,7 @@
 					},
 					"response": [
 						{
-							"id": "f4205159-3d9a-4f38-ab9d-a71c2749f6ef",
+							"id": "ae0a2a08-65d6-4a1a-a20e-862e4d167c26",
 							"name": "Normal response",
 							"originalRequest": {
 								"method": "GET",
@@ -45,6 +45,11 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -70,11 +75,17 @@
 							"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 						},
 						{
-							"id": "14f270c6-1e4d-4834-9ab6-9e31e1458095",
+							"id": "62686474-df17-4274-86a8-bb32c107588b",
 							"name": "Fact not found",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
+									}
+								],
 								"url": {
 									"raw": "{{baseUrl}}/fact",
 									"host": [
@@ -92,7 +103,7 @@
 							"cookie": []
 						},
 						{
-							"id": "71232639-d39a-457f-83ba-80cc7b7bf78d",
+							"id": "951f403a-1180-4473-b869-17c818df36e3",
 							"name": "Server Exception",
 							"originalRequest": {
 								"method": "GET",
@@ -100,6 +111,11 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -128,7 +144,7 @@
 				},
 				{
 					"name": "Get a list of facts",
-					"id": "01ce0810-c6e8-45b4-819e-454324fa9649",
+					"id": "da701e90-c376-4f83-b556-fe360100ee34",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -165,7 +181,7 @@
 					},
 					"response": [
 						{
-							"id": "9fa83271-508a-4378-95b5-8e94e6b112e6",
+							"id": "6738416d-b257-423c-8d33-86cb64d8d61c",
 							"name": "successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -173,6 +189,11 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -210,7 +231,7 @@
 							"body": "{}"
 						},
 						{
-							"id": "88d18c63-99fa-4a64-bc50-9f7955269780",
+							"id": "edfc90db-40b1-4502-ad40-85ea247f8c60",
 							"name": "Server Exception",
 							"originalRequest": {
 								"method": "GET",
@@ -218,6 +239,11 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: basic",
+										"key": "Authorization",
+										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -257,24 +283,62 @@
 					]
 				}
 			],
-			"id": "12750453-cce7-4621-846c-ece64b6040f0",
+			"id": "40532c09-2548-4cfd-a6da-a96561329109",
 			"description": "Cat Facts"
 		},
 		{
 			"name": "Breeds",
-			"item": [
+			"item": [],
+			"id": "3b449631-cdf6-493a-9d16-c378d6b4b88b",
+			"description": "Breeds"
+		},
+		{
+			"name": "Returns a list of breeds",
+			"id": "bd4d9f58-7b6a-4b03-9ced-c73659a9e9ad",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/breeds3?limit=<long>",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"breeds3"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "<long>",
+							"description": "This is a description"
+						}
+					]
+				},
+				"description": "Returns a list of breeds"
+			},
+			"response": [
 				{
-					"name": "Returns a list of breeds",
-					"id": "5cdcc5f1-222a-4e93-bf1d-b2a9cbfb3078",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
+					"id": "affd9c70-c64a-41e3-a0a8-46ba22694352",
+					"name": "Normal operation",
+					"originalRequest": {
 						"method": "GET",
 						"header": [
 							{
 								"key": "Accept",
 								"value": "application/json"
+							},
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
 							}
 						],
 						"url": {
@@ -287,107 +351,94 @@
 							],
 							"query": [
 								{
+									"description": "This is a description",
 									"key": "limit",
-									"value": "<long>",
-									"description": "This is a description"
+									"value": "<long>"
 								}
 							]
-						},
-						"description": "Returns a list of breeds"
-					},
-					"response": [
-						{
-							"id": "01e6afa8-dadb-464e-8bfa-698f3256d300",
-							"name": "Normal operation",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/breeds3?limit=<long>",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"breeds3"
-									],
-									"query": [
-										{
-											"description": "This is a description",
-											"key": "limit",
-											"value": "<long>"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
-						},
-						{
-							"id": "0532ccc8-f4c3-4d89-877f-47a5f48aab69",
-							"name": "Server Exception",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/breeds3?limit=<long>",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"breeds3"
-									],
-									"query": [
-										{
-											"description": "This is a description",
-											"key": "limit",
-											"value": "<long>"
-										}
-									]
-								}
-							},
-							"status": "Internal Server Error",
-							"code": 500,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{}"
 						}
-					]
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{}"
+				},
+				{
+					"id": "06d0532e-6b26-4f79-9d3f-b8c51e5ccf6f",
+					"name": "Server Exception",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"description": "Added as a part of security scheme: basic",
+								"key": "Authorization",
+								"value": "Basic <credentials>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/breeds3?limit=<long>",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"breeds3"
+							],
+							"query": [
+								{
+									"description": "This is a description",
+									"key": "limit",
+									"value": "<long>"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{}"
 				}
-			],
-			"id": "66348a76-12c9-44e1-889b-a015d2118a53",
-			"description": "Breeds"
+			]
 		}
 	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "username",
+				"value": "{{basicAuthUsername}}",
+				"type": "string"
+			},
+			{
+				"key": "password",
+				"value": "{{basicAuthPassword}}",
+				"type": "string"
+			}
+		]
+	},
 	"variable": [
 		{
-			"id": "1726fd97-aa8a-4afb-a793-d16a8d3db160",
+			"id": "15be68e4-ea32-4ee6-b144-5c7737768304",
 			"key": "baseUrl",
-			"value": "https://catfact.ninja"
+			"value": "https://catfact.ninja",
+			"type": "string"
 		}
 	]
 }

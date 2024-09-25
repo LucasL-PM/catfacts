@@ -12,12 +12,13 @@ info:
     url: https://catfact.ninja
   termsOfService: yes
   version: 4.0.0
+  description: An API description
     # API Reference
 servers:
   - url: https://catfact.ninja
     description: prod
 paths:
-  /breeds:
+  /breeds3:
     get:
       summary: Returns a list of breeds
       tags:
