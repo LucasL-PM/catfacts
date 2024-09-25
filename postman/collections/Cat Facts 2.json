@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "f8de2582-80ae-4ee0-864b-2a3dbb5cf675",
-		"name": "Cat facts 2",
+		"_postman_id": "03a37520-cb75-4a68-9928-9ba695bdbc11",
+		"name": "Cat Facts 2",
 		"description": "An API description\n\nContact Support:\n Name: Ronak\n Email: admin@admin.com",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "38338269-f8de2582-80ae-4ee0-864b-2a3dbb5cf675"
+		"_uid": "38338269-03a37520-cb75-4a68-9928-9ba695bdbc11"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "Returns a random fact",
-					"id": "c14ad14f-d848-4018-90cd-de6b20068a53",
+					"id": "e27f4572-3463-484c-9ce9-9534c15665bf",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -37,7 +37,7 @@
 					},
 					"response": [
 						{
-							"id": "ae0a2a08-65d6-4a1a-a20e-862e4d167c26",
+							"id": "9ed89aa7-f161-42cb-b689-fc651af59997",
 							"name": "Normal response",
 							"originalRequest": {
 								"method": "GET",
@@ -45,11 +45,6 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
-									},
-									{
-										"description": "Added as a part of security scheme: basic",
-										"key": "Authorization",
-										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -75,17 +70,11 @@
 							"body": "{\n  \"fact\": \"<string>\",\n  \"length\": \"<integer>\"\n}"
 						},
 						{
-							"id": "62686474-df17-4274-86a8-bb32c107588b",
+							"id": "737c4b99-2714-4f90-ad34-036751340633",
 							"name": "Fact not found",
 							"originalRequest": {
 								"method": "GET",
-								"header": [
-									{
-										"description": "Added as a part of security scheme: basic",
-										"key": "Authorization",
-										"value": "Basic <credentials>"
-									}
-								],
+								"header": [],
 								"url": {
 									"raw": "{{baseUrl}}/fact",
 									"host": [
@@ -103,7 +92,7 @@
 							"cookie": []
 						},
 						{
-							"id": "951f403a-1180-4473-b869-17c818df36e3",
+							"id": "58593595-f57e-4138-824f-2ede255d5891",
 							"name": "Server Exception",
 							"originalRequest": {
 								"method": "GET",
@@ -111,11 +100,6 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
-									},
-									{
-										"description": "Added as a part of security scheme: basic",
-										"key": "Authorization",
-										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -144,7 +128,7 @@
 				},
 				{
 					"name": "Get a list of facts",
-					"id": "da701e90-c376-4f83-b556-fe360100ee34",
+					"id": "909b02d8-f4e3-4a76-996b-f2a585bbb76e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -181,7 +165,7 @@
 					},
 					"response": [
 						{
-							"id": "6738416d-b257-423c-8d33-86cb64d8d61c",
+							"id": "3a5b1368-eb65-4a72-9919-fda9f83546e9",
 							"name": "successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -189,11 +173,6 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
-									},
-									{
-										"description": "Added as a part of security scheme: basic",
-										"key": "Authorization",
-										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -231,7 +210,7 @@
 							"body": "{}"
 						},
 						{
-							"id": "edfc90db-40b1-4502-ad40-85ea247f8c60",
+							"id": "274bc996-2818-4915-b169-da3791ce44df",
 							"name": "Server Exception",
 							"originalRequest": {
 								"method": "GET",
@@ -239,11 +218,6 @@
 									{
 										"key": "Accept",
 										"value": "application/json"
-									},
-									{
-										"description": "Added as a part of security scheme: basic",
-										"key": "Authorization",
-										"value": "Basic <credentials>"
 									}
 								],
 								"url": {
@@ -283,18 +257,18 @@
 					]
 				}
 			],
-			"id": "40532c09-2548-4cfd-a6da-a96561329109",
+			"id": "9dd6aa0e-878a-4c00-942a-6ee904831e41",
 			"description": "Cat Facts"
 		},
 		{
 			"name": "Breeds",
 			"item": [],
-			"id": "3b449631-cdf6-493a-9d16-c378d6b4b88b",
+			"id": "d4ecf400-6f1c-4a76-840f-842e5b4ba76e",
 			"description": "Breeds"
 		},
 		{
 			"name": "Returns a list of breeds",
-			"id": "bd4d9f58-7b6a-4b03-9ced-c73659a9e9ad",
+			"id": "e4833880-51d8-40d2-b741-28839500e7d3",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -307,12 +281,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{baseUrl}}/breeds3?limit=<long>",
+					"raw": "{{baseUrl}}/breeds?limit=<long>",
 					"host": [
 						"{{baseUrl}}"
 					],
 					"path": [
-						"breeds3"
+						"breeds"
 					],
 					"query": [
 						{
@@ -326,7 +300,7 @@
 			},
 			"response": [
 				{
-					"id": "affd9c70-c64a-41e3-a0a8-46ba22694352",
+					"id": "56df3332-9d15-4097-9936-045cce3d10b4",
 					"name": "Normal operation",
 					"originalRequest": {
 						"method": "GET",
@@ -334,20 +308,15 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
-							},
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeds3?limit=<long>",
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeds3"
+								"breeds"
 							],
 							"query": [
 								{
@@ -371,7 +340,7 @@
 					"body": "{}"
 				},
 				{
-					"id": "06d0532e-6b26-4f79-9d3f-b8c51e5ccf6f",
+					"id": "07e349d4-31b2-4e1a-93da-258cf9263c1a",
 					"name": "Server Exception",
 					"originalRequest": {
 						"method": "GET",
@@ -379,20 +348,15 @@
 							{
 								"key": "Accept",
 								"value": "application/json"
-							},
-							{
-								"description": "Added as a part of security scheme: basic",
-								"key": "Authorization",
-								"value": "Basic <credentials>"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/breeds3?limit=<long>",
+							"raw": "{{baseUrl}}/breeds?limit=<long>",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
-								"breeds3"
+								"breeds"
 							],
 							"query": [
 								{
@@ -418,24 +382,9 @@
 			]
 		}
 	],
-	"auth": {
-		"type": "basic",
-		"basic": [
-			{
-				"key": "username",
-				"value": "{{basicAuthUsername}}",
-				"type": "string"
-			},
-			{
-				"key": "password",
-				"value": "{{basicAuthPassword}}",
-				"type": "string"
-			}
-		]
-	},
 	"variable": [
 		{
-			"id": "15be68e4-ea32-4ee6-b144-5c7737768304",
+			"id": "6f820d41-ed23-4a79-92d0-8c1cee98d75e",
 			"key": "baseUrl",
 			"value": "https://catfact.ninja",
 			"type": "string"
